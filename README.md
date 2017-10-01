@@ -1,4 +1,4 @@
-# Speechify: The Speech Correction Application.
+# Talk to Mario: The Speech Correction Application.
 
 Speechify is the only application designed to help children with speech impediment issues. The application comprises of two streams that will help children practice their annunciation.
 
