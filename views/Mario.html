@@ -1,44 +1,25 @@
-<!--
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Mario Says: </title>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-	<h1>Mario Says: Car</h1>
-  <h3>Your name:  </h3>
-  <h3>Score:  </h3>
-  <p>Mario is running here</p>
-    <p>It's ok! <a href="http://google.com"> Click here for demonstrations!</a></p>
-    
-</body>
-</html>
--->
-<!--
-<div class="boxed">
-  This text is enclosed in a box.
-</div>
--->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Speech Therapy</title>
+    <link href="../public/stylesheets/Mario.css" rel="stylesheet">
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Mario Says: </title>
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-  <div class="container">
-    <div class="nav">
-<!--      <h3>Mario Says:</h3>-->
-        <h3>Time Remaining:</h3>
+  </head>
+
+  <body>
+    <button onclick="move()">Click Me</button>
+    <button onclick="jump()">Click Me</button>
+    <div id="obstacleContainer">
+      <div id="word">Car</div>
+      <img id="obstacle" src="../public/images/car.png"></img>
     </div>
-    <div class="main">
-      <h1>Name: </h1>
-        <h3>Score:</h3>
+    <div id="playerContainer">
+      <object id="player" type="image/svg+xml" data="../public/images/mario1.svg"></object>
     </div>
-  </div>
-</body>
+    <script src="../main.js"></script>
+  </body>
 </html>
