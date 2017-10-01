@@ -3,7 +3,7 @@ var router = express.Router();
 var SpeechToTextV1 = require('watson-developer-cloud/speech-to-text/v1');
 var fs = require('fs');
 
-router.get('/speech', function(req, res, next) {
+router.get('/speech_text', function(req, res, next) {
 
 	var speech_to_text = new SpeechToTextV1({
 	  username: "a589470f-8382-4fec-af92-cafb5c181f85",
@@ -28,7 +28,7 @@ router.get('/speech', function(req, res, next) {
 	  .pipe(speech_to_text.createRecognizeStream({ content_type: 'audio/flac' }))
 	  .pipe(fs.createWriteStream('./transcription.txt'));
 
-  res.render('index', { title: 'Speech Therapy App' });
+  	// res.render('index', { title: 'Speech Therapy App' });
 });
 
 module.exports = router;

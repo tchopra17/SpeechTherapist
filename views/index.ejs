@@ -17,7 +17,9 @@
 
 <script>
 function speech(){
-	
+	$.get('/speech_text', function(rep, res, next){
+		console.log("yaay");
+	})
 }
 </script>
 </html>

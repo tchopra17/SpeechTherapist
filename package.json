@@ -15,6 +15,10 @@
     "fs": "0.0.1-security",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5",
-    "watson-developer-cloud": "^2.39.2"
+    "watson-developer-cloud": "^2.39.2",
+    "wav": "^1.0.1"
+  },
+  "devDependencies": {
+    "play": "^0.5.0"
   }
 }
