@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var speech_text = require('./routes/speech');
+var text_speech = require('./routes/text');
 var index = require('./routes/index');
 var lessons = require('./routes/lessons');
 
@@ -23,8 +25,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/speech', speech_text);
+app.use('/text', text_speech);
 app.use('/', index);
 app.use('/lessons', lessons);
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
