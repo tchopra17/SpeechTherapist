@@ -1,6 +1,6 @@
 # Talk to Mario: The Speech Correction Application.
 
-Speechify is the only application designed to help children with speech impediment issues. The application comprises of two streams that will help children practice their annunciation.
+Talk to Mario is the only application designed to help children with speech impediment issues. The application comprises of two streams that will help children practice their annunciation.
 
  * Lesson modules:
     * Lesson modules will first speak the sentences to the students, it will then ask the student to repeat the sentence to the application and analyze the student’s annunciation and provide a rating, and advice for improvement and practice sessions.
